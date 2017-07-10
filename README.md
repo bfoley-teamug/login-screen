@@ -1,0 +1,1 @@
+This is a log-in screen project in jquery. This is similar to a Treehouse course, but I'm doing my own version of it to better learn js and jquery. Cheers!
