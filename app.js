@@ -13,7 +13,7 @@ function matchingPW() {
 }
 
 function canSubmit() {
- return validPW() && matchingPW(); 
+ return validPW() && matchingPW();   
 }
 
 //hide messages if pw's match
@@ -34,9 +34,19 @@ function confirmPwEvent() {
 }
 
 //prop() gets property value
-function enableSubmitEvent() {
+ 
+ function enableSubmitEvent() {
  $("#submit").prop("", !canSubmit());   
 }
+
+$("#submit").click(function() {  
+    var $username = $("#username").val();
+     if ($username = ' ') {
+          alert("Please enter a username, silly!") 
+         console.log("Try again");
+    }
+});
+
  
 //figure out if pw confirmation matches
 //focus() is binding an event handler to JS event
