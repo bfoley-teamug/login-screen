@@ -4,13 +4,16 @@ body {
   font-size: 14px;
 }
 
-.center {
- background-color: #f9f9f9 
-}
-
 .row {
   height: 100vh; 
 }
+
+@media (min-width: 760px) { 
+   .center {
+   background-color: #f9f9f9 
+  }  
+}
+
 
 form {
   background: #fff;
@@ -99,6 +102,4 @@ input[type="submit"] {
   padding: .8em 0;
   
 }
-
-
  
