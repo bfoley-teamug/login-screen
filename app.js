@@ -39,9 +39,10 @@ function confirmPwEvent() {
  $("#submit").prop("", !canSubmit());   
 }
 
+//if no username entered
 $("#submit").click(function() {  
     var $username = $("#username").val();
-     if ($username = ' ') {
+     if (!$username) {
           alert("Please enter a username, silly!") 
          console.log("Try again");
     }
